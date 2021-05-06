@@ -1,0 +1,267 @@
+.fluid-container{
+    max-width: 550px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fafafa;
+    height: 600px;
+}
+.header-display{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid rgb(20, 18, 17);
+}
+.back-icon{
+    color: black;
+}
+.category-name{
+    padding-top: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.3mm;
+}
+.add-pad{
+    padding-top: 15px;
+}
+.content{
+    width: 100%;
+    background-color: #f8f8fa;
+}
+.arrange-cards{
+    width: 100%;
+    justify-content: space-around;
+}
+.custom-card{
+    height:200px;
+    width: 150px;
+    padding: 10px 15px 10px 15px;
+    background-color: #ffffff;
+    border-radius:  5px;
+    border:1px solid #ded5d5;
+}
+.custom-card:hover{
+    border: 2px solid #ded5d5;
+}
+.adjust-card{
+    padding-left: 33px;
+    padding-top: 30px;
+}
+.icon-div{
+    padding-top:25px;
+    vertical-align: middle;
+}
+.icon-div img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.resource{
+    text-align: center;
+    padding-top:15px;
+}
+.resource span{
+    font-size: 15px;
+    font-weight: 500;
+}
+.back{
+    padding: 10px 0px 0px 25px;
+    text-align: center;
+    align-content: space-around;
+   width:100%;
+    vertical-align: middle;
+}
+.back img{
+    height:32px;
+    width:32px;
+}
+.input-field{
+    width:100%;
+    padding:15px 10px 15px 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.input-field input{
+    padding: 7px 10px 7px 10px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid rgb(35, 106, 109);
+}
+
+.populate-buttons{
+    width:100%
+}
+.queries{
+    width: 100%;
+    height: auto;
+    padding:15px;
+}
+.queries1{
+    display:none;
+}
+.tweets{
+    width:100%;
+    height:auto;
+}
+.tweets1{
+    display: none;
+}
+.spacing{
+    padding: 15px 10px 0px 10px;
+}
+.row{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.tweet-display{
+    width:100%;
+    height: auto;
+    min-height: 170px;
+    background-color: #fafafa;
+    padding: 0px 20px 0px 20px;
+    border-bottom: 0.2px solid #e4e4e4;
+}
+.user-photo{
+    padding-top:3px;
+}
+.user-photo img{
+    height:45px;
+    width:45px;
+    vertical-align:middle;
+    border-radius: 50%;
+}
+.lower-down{
+    padding-top:20px
+}
+.user-name{
+    width: 100%;
+}
+.name{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Helvetica;
+    display: block;
+}
+
+.user-id{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(66, 69, 70);
+    display: block;
+}
+.adjust-tweet{
+    padding-left: 10px;
+}
+.tweet-text{
+    padding-top: 13px;
+    padding-bottom: 15px;
+}
+.tweet-text span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+}
+.button-class-left button{
+    float: right;
+    border-radius: 25px;
+    padding: 5px 15px 5px 15px;
+    width: 130px;
+    height: 40px;
+}
+.button-class-right button{
+    float: left;
+    
+    border-radius: 25px;
+    background-color: rgb(219, 0, 55);
+    padding: 5px 15px 5px 15px;
+    width: 130px;
+    height: 40px;
+}
+.populate-buttons{
+    border-radius: 15px;
+    padding-bottom: 15px;
+}
+.quick-links{
+    width:100%;
+    height:auto;
+    border: 1px solid slategray;
+    border-radius: 10px;
+}
+.h3-01{
+    letter-spacing: .009em;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #1d1d1f;
+    padding: 10px 0px 10px 15px;
+}
+.tweet-display:hover{
+    background-color: #cccdcf;
+}
+.add-pad{
+    padding-top: 10px;
+}
+
+/* #new CSS */
+
+.full-width{
+    width:100%;
+}
+.border-arrangement{
+    border: 1px solid #b4b2b2;
+    border-radius: 15px;
+    padding: 10px 0px 10px 0px;
+}
+.tweet-text-mini{
+    padding: 7px 10px 7px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+}
+.user-name{
+    width: 100%;
+    padding-left: 15px;
+}
+.content-display{
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+.adjust-tweet{
+    padding:5px 0px 5px 0px;
+}
+.full-width-extent{
+    width:100%;
+}
+.venv a{
+    text-decoration: none;
+    color: inherit;
+}
+@media (max-width: 576px){
+
+    .tweet-display{
+        width: 100%;
+        height: auto;
+        min-height: 170px;
+        background-color: #fafafa;
+        padding: 0px 0px 0px 0px;
+        border-bottom: 0.2px solid #e4e4e4;
+    }
+    .user-photo img{
+        height: 36px;
+        width: 36px;
+        vertical-align: middle;
+        border-radius: 50%;
+    }
+    .space-left{
+        padding-left: 45px;
+    }
+    
+    
+    
+    
+}
+
+@media (min-width: 577px){
+    
+}

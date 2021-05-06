@@ -1,0 +1,110 @@
+<div class="fluid-container">
+    <div class="header-display">
+      <div class="row">
+        <div class="col-4 col-md-2 col-xs-1 row justify-content-center">
+          <div class="back"><a routerLink="/home"><img src="assets/doctor.png"></a></div>
+        </div>
+        <div class="col-8 col-md-8 col-xs-11">
+          <h4 class="category-name">Covid Resources</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+        <div class="input-field row justify-content-center">
+                <input placeholder="Enter Query Hashtags" (keyup.enter)="onEnter()" [(ngModel)]="customQuery">
+        </div>
+        <div class="custom-display-2 row">
+            <div class="col-6 button-class-left">
+                <button class="btn btn-primary" (click)="startSearch()">Search</button>
+            </div>
+            <div class="col-6 button-class-right">
+                <button class="btn btn-danger" [disabled]="resetDisable" (click)="resetSearch()">Reset</button>
+            </div>
+        </div>
+        <div class={{class001}}>
+            <div class="quick-links">
+                <div class="quick-links-tag">
+                    <h3 class="h3-01">Quick Links</h3>
+                </div>
+                <div class="populate-buttons row justify-content-center">
+                    <span class="spacing"><a routerLink="/tata"><button class="btn btn-outline-primary btn-sm">Remdesivir & Tocilizumab</button></a></span>
+                    <span class="spacing"><a routerLink="/beds"><button class="btn btn-outline-primary btn-sm">Hospitals & Beds</button></a></span>
+                    <span class="spacing"><a routerLink="/fabiflu"><button class="btn btn-outline-primary btn-sm">Fabiflu & Fabipiravir</button></a></span>
+                    <span class="spacing"><a routerLink="/icu"><button class="btn btn-outline-primary btn-sm">ICU & Ventilator</button></a></span>
+                    <span class="spacing"><a routerLink="/oxygen"><button class="btn btn-outline-primary btn-sm">Oxygen</button></a></span>
+                    <span class="spacing"><a routerLink="/plasma"><button class="btn btn-outline-primary btn-sm">Plasma</button></a></span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class={{class002}}>
+            <div *ngFor="let item of info.statuses" class="full-width add-pad venv">
+
+                <a href="https://www.twitter.com/{{item.user.screen_name}}/status/{{item.id_str}}">
+                  <div class="tweet-display">
+                    <div class="lower-down">
+                      <div class="full-width-extent row">
+                        <div class="col-1 user-photo">
+                          <div class="round-circle">
+                            <img [src]="item.user.profile_image_url" >
+                          </div>
+                        </div>
+                        <div class="col-11 full-width">
+                          
+                            <div class="user-name">
+                              <span class="name">{{item.user.name}}</span>
+                              <span class="user-id">@{{item.user.screen_name}}</span>
+                            </div>
+                          
+                        </div>
+                      </div>
+                      
+                      <div class="row full-width">
+                        <div class="col-1"></div>
+                        <div class="col-11">
+                         
+                          <div class="content-display">
+                            <div class="adjust-tweet">
+                                  <span [innerHTML]="item.full_text | filterblue"></span>
+                            </div>
+                                
+                                <div *ngIf="item.retweeted_status" class="full-width">
+                                  <div class="full-width border-arrangement">
+                                    <div class="row full-width">
+                                      <div class="col-2 user-photo">
+                                        <div class="round-circle">
+                                          <img [src]="item.retweeted_status.user.profile_image_url" >
+                                        </div>
+                                      </div>
+                                      <div class="col-10">
+                                        <span class="name">{{item.retweeted_status.user.name}}</span>
+                                        <span class="user-id">{{item.retweeted_status.user.screen_name}}</span>
+                                      </div>
+                                      <div class="full-width tweet-text-mini">
+                                        <span  [innerHTML]="item.retweeted_status.full_text | filterblue"></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                           
+                         </div>
+                        </div>
+                      </div>
+  
+                        </div>
+                      </div>
+                </a>
+
+                  </div>
+                </div>
+            
+              </div>
+        </div>
+    <!-- </div>
+
+
+
+  </div> whole end -->
